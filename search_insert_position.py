@@ -21,3 +21,17 @@ class Solution(object):
                 nums.append(target)
                 nums.sort()
                 return nums.index(target)
+
+
+
+"""
+em js
+var searchInsert = function(nums, target) {
+    if (nums.includes(target)) {
+        return nums.indexOf(target)
+    }
+    nums.push(target)
+    nums.sort((a,b) => a-b)
+    return nums.indexOf(target)
+}
+"""
