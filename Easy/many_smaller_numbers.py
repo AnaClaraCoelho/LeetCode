@@ -14,12 +14,10 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        comp = 0
         count = 0
         answer = []
         for i in range(len(nums)):
             count = 0
-            comp = nums[i]
             for j in range(len(nums)):
                 if nums[j] < nums[i]:
                     count += 1
